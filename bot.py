@@ -5,9 +5,8 @@ import os
 import re
 import requests
 
-TOKEN = "8705756500:AAEEo1gLTxhljUzePFxARBr0ZqCEXpEYjq0"
-CHAT_ID = "5542508762"
-
+TOKEN = os.getenv("TELEGRAM_TOKEN")
+CHAT_ID = os.getenv("CHAT_ID")
 URL = "https://www.hepsiburada.com/cep-telefonlari-c-371965?filtreler=satici:Hepsiburada"
 CHECK_INTERVAL = 600
 DATA_FILE = "prices.json"
